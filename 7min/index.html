@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counting down</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <style>
+    html, body
+    {
+      height: 100%;
+      padding: 0;
+      margin:0;
+    }
+
+    html
+    {
+      background-color: black;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 128px;
+      margin-left: auto;
+      text-align: center;
+      vertical-align: center;
+      height: 100%;
+    }
+
+    #counter
+    { 
+      margin-top:20%;
+    }
+  </style>
+</head>
+<body>
+  
+<!-- Display the countdown timer in an element -->
+<p id="counter"></p>
+
+<script>
+let urlParams = new URLSearchParams(window.location.search);
+let seconds = urlParams.get('sec');
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+  var minutes = Math.floor(seconds/60);
+  var remainingSeconds = seconds - (minutes*60);
+  // Display the result in the element with id="demo"
+  document.getElementById("counter").innerHTML = minutes.toString().padStart(2,'0')+ ':' + remainingSeconds.toString().padStart(2,'0');
+  seconds--;
+  if (seconds<0)
+  {
+    clearInterval(x);
+  }
+}, 1000);
+</script>
+</body>
+</html>
