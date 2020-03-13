@@ -1,1 +1,286 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>KomponentApp</title><link href=/js/about.e67e83ad.js rel=prefetch><link href=/css/app.f5eee29e.css rel=preload as=style><link href=/js/app.1c6da3ad.js rel=preload as=script><link href=/js/chunk-vendors.14836f97.js rel=preload as=script><link href=/css/app.f5eee29e.css rel=stylesheet></head><body><noscript><strong>We're sorry but KomponentApp doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.14836f97.js></script><script src=/js/app.1c6da3ad.js></script></body></html>
+<!-- DIRTY Responsive pricing table HTML -->
+<html>
+    <head>
+        <style>
+            /* DIRTY Responsive pricing table CSS */
+
+/* 
+- make mobile switch sticky
+*/
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+   outline: 0;
+}
+body { 
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:14px;
+  padding:14px;
+}
+article {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  height:1000px;
+  position:relative;
+}
+ul {
+  display:flex;
+  top:0px;
+  z-index:10;
+  padding-bottom:14px;
+}
+li {
+  list-style:none;
+  flex:1;
+}
+li:last-child {
+  border-right:1px solid #DDD;
+}
+button {
+  width:100%;
+  border: 1px solid #DDD;
+  border-right:0;
+  border-top:0;
+  padding: 10px;
+  background:#FFF;
+  font-size:14px;
+  font-weight:bold;
+  height:60px;
+  color:#999
+}
+li.active button {
+  background:#F5F5F5;
+  color:#000;
+}
+table { border-collapse:collapse; table-layout:fixed; width:100%; }
+th { background:#F5F5F5; display:none; }
+td, th {
+  height:53px
+}
+td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+td,th {
+  text-align:left;
+}
+td+td, th+th {
+  text-align:center;
+  display:none;
+}
+td.default {
+  display:table-cell;
+}
+.bg-purple {
+  border-top:3px solid #A32362;
+}
+.bg-blue {
+  border-top:3px solid #0097CF;
+}
+.sep {
+  background:#F5F5F5;
+  font-weight:bold;
+}
+.txt-l { font-size:28px; font-weight:bold; }
+.txt-top { position:relative; top:-9px; left:-2px; }
+.tick { font-size:18px; color:#2CA01C; }
+.hide {
+  border:0;
+  background:none;
+}
+
+@media (min-width: 640px) {
+  ul {
+    display:none;
+  }
+  td,th {
+    display:table-cell !important;
+  }
+  td,th {
+    width: 330px;
+  
+  }
+  td+td, th+th {
+    width: auto;
+  }
+}
+            </style>
+        </head>
+        <body>
+
+<article>
+    <table>
+      <thead>
+        <tr>
+          <th class="hide"></th>
+          <th class="bg-purple">Basic</th>
+          <th class="bg-blue">Advanced</th>
+          <th class="bg-blue default">Ultimate</th>
+          <th class="bg-blue">Daryl's special</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly price</td>
+          <td><span class="txt-top"></span>Do your job</span></td>
+          <td><span class="txt-top"></span>Do your job properly</span></td>
+          <td class="default"><span class="txt-top"></span>Help me</span></td>
+          <td><span class="txt-top"></span>Make me an architect</span></td>
+        </tr>
+        <tr>
+          <td colspan="5" class="sep">Communication</td>
+        </tr>
+        <tr>
+            <td>Response time in one day</td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+            <td>Not ignoring you</td>
+            <td></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+        <tr>
+          <td>Answering your questions</td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td class="default"><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td>Telling you that you are a piece of shit and dumb</td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td class="default"><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+            <td>Have greeting at the begining of the conversation</td>
+            <td></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+            <td>Asking you 'How are you' and caring about the answer</td>
+            <td></td>
+            <td></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+            <td>Conversation over a call</td>
+            <td></td>
+            <td></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+        <tr>
+        <tr>
+            <td>Conversation face to face</td>
+            <td></td>
+            <td></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+            </tr>
+        <tr>
+          <td colspan="5" class="sep">Help</td>
+        </tr>
+        <tr>
+            <td>Helping to understand my domain</td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+        <tr>
+          <td>Helping with integration</td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td class="default"><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td>Helping with your area</td>
+          <td></td>
+          <td></td>
+          <td class="default"><span class="tick">&#10004;</span></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td>Helping with your dumb ideas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><span class="tick">&#10004;</span></td>
+        </tr>
+        <tr>
+            <td colspan="5" class="sep">After work</td>
+          </tr>
+          <tr>
+              <td>Willing to consider a drink with you after work</td>
+              <td></td>
+              <td><span class="tick">&#10004;</span></td>
+              <td class="default"><span class="tick">&#10004;</span></td>
+              <td><span class="tick">&#10004;</span></td>
+            </tr>
+          <tr>
+            <td>Asking to go out after work for a drink</td>
+            <td></td>
+            <td></td>
+            <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Offering my friendship</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Invite you to my birthday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+      </tbody>
+    </table>
+      
+    </article>
+    <script lang="text/javascript">
+// DIRTY Responsive pricing table JS
+
+$( "ul" ).on( "click", "li", function() {
+  var pos = $(this).index()+2;
+  $("tr").find('td:not(:eq(0))').hide();
+  $('td:nth-child('+pos+')').css('display','table-cell');
+  $("tr").find('th:not(:eq(0))').hide();
+  $('li').removeClass('active');
+  $(this).addClass('active');
+});
+
+// Initialize the media query
+  var mediaQuery = window.matchMedia('(min-width: 640px)');
+  
+  // Add a listen event
+  mediaQuery.addListener(doSomething);
+  
+  // Function to do something with the media query
+  function doSomething(mediaQuery) {    
+    if (mediaQuery.matches) {
+      $('.sep').attr('colspan',5);
+    } else {
+      $('.sep').attr('colspan',2);
+    }
+  }
+  
+  // On load
+  doSomething(mediaQuery);
+    </script>
+    </body>
+    </html>
